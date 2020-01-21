@@ -1,0 +1,70 @@
+
+
++max-screen(800px)
+	.range
+		width: 56rem
+		margin-left: auto
+		margin-right: auto
+	
++min-screen(641px)
+	.visible-iphone 
+		display: none !important
+		
++max-screen(640px)
+	.hidden-iphone 
+		display: none !important
+	.header
+		padding-top: 1.5rem
+		padding-bottom: 1.5rem
+	.range-radio
+		.radio 
+			display: block
+			margin-right: 0
+			margin-bottom: 1.4rem
+
+	.burger 
+		display: block
+		position: relative
+		z-index: 11
+		
+	.main-menu
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+
+		z-index: 10
+		background: #435993
+		color: #fff
+		display: none
+		padding: 8rem 0 1.5rem
+		&__link 
+			color: #fff
+			margin: 0
+			padding: 1.5rem 2rem
+
+		&.open 
+			display: block
+			
+		
++max-screen(559px)
+	.wrapper 
+		padding-left: 1.2rem
+		padding-right: 1.2rem
+	.profile
+		padding-top: 7rem
+	.profile__title
+		margin-bottom: 4rem
+	.profile-section__title
+		font-size: 2.6rem
+	.jq-selectbox
+		min-width: 25rem
+		width: 100%
+		display: block !important
+	.range__col
+		font-size: .9rem
+		font-weight: 400
+		padding-right: .4rem
+
+	.form-button
+		margin-top: 4rem

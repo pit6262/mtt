@@ -1,0 +1,82 @@
+.header
+	width: 100%
+	min-width: 32rem
+	text-align: left
+	flex-shrink: 0
+	background: #fff
+	padding: 3rem 0
+
+.main-menu 
+	display: flex
+	align-items: center
+	justify-content: center
+	&__link 
+		display: block
+		color: #435993
+		font-size: 1.4rem
+		margin: 0 3rem
+		font-weight: 300
+		&.is-active
+			color: #1c1c1c
+		
+
+
+/*  Burger button */
+.burger
+	height: 35px
+	width: 35px
+	cursor: pointer
+	position: relative
+	display: none
+	
+	&__icon
+		height: 3px
+		width: 35px
+		position: absolute
+		top: 50%
+		left: 50%
+		border-radius: 25px
+		background-color:  #435993
+		transform: translate(-50%,-50%) rotate(0deg)
+		transition: all ease 0.5s
+		&:before,&:after
+			content: ""
+			position: absolute
+			height: inherit
+			border-radius: #435993
+			background-color: #435993
+			margin: auto
+			width: 100%
+			transition: all ease 0.5s
+
+		&:before
+			top: -10px
+			left: 0
+			transform-origin: left
+
+		&:after
+			bottom: -10px
+			right: 0
+			transform-origin: right
+
+	&.open .burger__icon
+		transform: translate(-50%,-50%) rotate(135deg)
+		background: #fff
+		&:before
+			top: 0
+			width: 50%
+			transform: translateX(100%) rotate(-90deg)
+			background: #fff
+
+		&:after
+			bottom: 0
+			width: 50%
+			transform: translateX(-100%) rotate(-90deg)
+			background: #fff
+  
+
+
+
+
+
+

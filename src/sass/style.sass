@@ -1,0 +1,49 @@
+@import variables
+@import lib/base
+@import normalize
+
+html 
+	font-size: 62.5%
+
+body 	
+	color: $color
+	font: $font-weight $font-size $font-family, Arial, sans-serif
+	line-height: $line-height
+	background: $bgcolor
+	min-height: 100%
+	display: flex
+	&.lock 
+		overflow: hidden
+
+
+/* 3. TYPOGRAPHY
+/* ================================================ */
+@import typography
+
+/* 4. HEADER
+/* ================================================ */
+@import header
+	
+/* 5. MAIN
+/* ================================================ */
+@import main
+
+@import ui
+
+@import buttons 
+	
+@import forms 
+
+@import icons 
+
+@import popup 
+
+
+/* 6. FOOTER
+/* ================================================ */
+@import footer
+
+
+/* 8. MEDIA
+/* ================================================ */
+@import media

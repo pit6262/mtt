@@ -1,0 +1,193 @@
+/* Elements ============ */
+
+/* Tabs */
+.tab-cont 
+	display: block
+	
+	&.is-hidden
+		display: none
+		
+
+/* Video */
+// .video
+// 	position: relative
+// 	overflow: hidden
+// 	height: 0
+// 	padding-bottom: 56.25%
+
+// 	video,iframe,object,embed
+// 		position: absolute
+// 		top: 0
+// 		left: 0
+// 		width: 100%
+// 		height: 100%
+
+// .videobg
+// 	video,iframe,object,embed
+// 		position: fixed
+// 		top: 50%
+// 		left: 50%
+// 		min-width: 100%
+// 		min-height: 100%
+// 		width: auto
+// 		height: auto
+// 		z-index: -100
+// 		transform: translateX(-50%) translateY(-50%)
+// 		background-size: cover
+
+
+/* Range  */
+.range 
+	padding-bottom: 2.7rem
+.range__row 
+	display: flex
+	align-items: flex-end
+	
+
+.range__col 
+	width: 25%
+	margin-bottom: 1rem
+	position: relative
+	padding-bottom: .3rem
+	z-index: 1
+	font-size: 1.3rem
+	padding-right: 1rem
+	font-weight: 300
+	&:after 	
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 100%
+		height: 1.8rem
+		border-left: .2rem dotted #b3b3b3
+	&:before 	
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 100%
+		height: 2.5rem
+		width: .1rem
+		background: #fff
+	&:first-child 
+		&:before 
+			display: none
+	&:nth-child(2)
+		
+		&:after 
+			height: 1.6rem
+	&:nth-child(3)
+		
+		&:after
+			height: 1.3rem
+	&:last-child
+		
+		text-align: right
+		padding-right: 0
+		&:after 
+			height: .8rem
+			left: auto 
+			right: 0
+		&:before 
+			display: none
+			
+			
+.range-scroll
+	margin: 0 
+	background: linear-gradient(to right, #ccb1f1, #435993)
+	height: 15px
+	position: relative
+	&:after 
+		content: ''
+		display: block
+		position: absolute
+		bottom: 3px
+		right: 0
+		+arr(774px, 12px, #fff, tl)
+	
+
+	.ui-slider-range
+		background-color: #e8e8e8
+		height: 15px
+
+		position: absolute
+		right: 0
+
+	.ui-slider-handle
+		width: 23px
+		height: 28px
+		
+		background: url('../img/range-slider.png') no-repeat center
+		display: block
+		position: absolute
+		top: 100%
+		margin-left: -12px
+		margin-top: .4rem
+		cursor: pointer
+
+
+/* loader */
+.loaded .main-wrapper
+	visibility: hidden
+	opacity: 0
+	transition: opacity 0.3s
+.loaded .icon-load 
+	display: flex
+.icon-load
+	position: fixed
+	top: 0
+	left: 0
+	right: 0 
+	bottom: 0
+	display: none
+	justify-content: center
+	align-items: center
+	width: auto
+ 
+.ball
+	width: 3rem
+	height: 3rem
+	border-radius: 1.5rem
+	background: white
+	opacity: 0.3
+
+.a
+	margin-right: 1rem
+	animation: ball-a 0.7s ease-out 0s infinite alternate
+
+.b
+	margin-right: 1rem
+	animation: ball-b 0.7s ease-out 0.2s infinite alternate
+.c
+	animation: ball-c 0.7s ease-out 0.4s infinite alternate
+
+@keyframes ball-a 
+	from
+		height: 2rem
+		opacity: 0.3
+		background: white
+	to
+		height: 7rem
+		opacity: 1
+		background: green
+
+@keyframes ball-b 
+	from
+		height: 2rem
+		opacity: 0.3
+		background: white
+	to
+		height: 6.5rem
+		opacity: 1
+		background: yellow
+
+@keyframes ball-c 
+	from
+		height: 2rem
+		opacity: 0.3
+		background: white
+	to
+		height: 6rem
+		opacity: 1
+		background: red

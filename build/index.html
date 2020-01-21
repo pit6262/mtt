@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Название проекта - Главная</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css?ver1.0" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+</head>
+<body class="loaded">
+
+
+<!-- BEGIN BODY -->
+<div class="main-wrapper">
+
+	<!-- BEGIN HEADER -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="burger toggle-menu" >
+				<div class="burger__icon"></div>
+			</div>
+			<nav class="main-menu">
+				<a href="#section1" class="main-menu__link anchor">Личная информация</a>
+				<a href="#section2" class="main-menu__link anchor">Опыт</a>
+				<a href="#section3" class="main-menu__link anchor">JavaScript</a>
+				<a href="#section4" class="main-menu__link anchor">О себе</a>
+			</nav>
+		</div>
+	</header>
+	<!-- HEADER EOF   -->
+
+	<!-- BEGIN MAIN -->
+	<main class="main">
+		<div class="profile">
+			<div class="wrapper">
+				<h1 class="profile__title">Анкета</h1>
+				<form action="#">
+					<div class="profile-section" id="section1">
+						<div class="profile-section__icon">
+							<img src="img/icon1.svg" alt="">
+						</div>
+						<div class="profile-section__head">
+							<div class="profile-section__title">Личная информация</div>
+						</div>
+
+						<div class="profile-form">
+							<div class="form-field">
+								<span class="label">ФИО</span>
+								<input type="text" class="form-input">
+							</div>
+							<div class="form-field text-center">
+								<select class="styler" data-placeholder="Год рождения">
+									<option value=""></option>
+									<option value="1998">1998</option>
+									<option value="1997">1997</option>
+									<option value="1996">1996</option>
+									<option value="1995">1995</option>
+									<option value="1994">1994</option>
+									<option value="1993">1993</option>
+									<option value="1992">1992</option>
+									<option value="1991">1991</option>
+									<option value="1990">1990</option>
+									<option value="1989">1989</option>
+									<option value="1987">1987</option>
+									<option value="1986">1986</option>
+								</select>
+							</div>
+							<div class="form-field">
+								<span class="label">Место проживания</span>
+								<input type="text" class="form-input">
+							</div>
+							<div class="form-field">
+								<span class="label">Skype</span>
+								<input type="text" class="form-input">
+							</div>
+							<div class="form-field">
+								<span class="label">E-mail</span>
+								<input type="email" class="form-input">
+							</div>
+						</div>
+					</div>
+					<div class="profile-section" id="section2">
+						<div class="profile-section__icon">
+							<img src="img/icon2.svg" alt="">
+						</div>
+						<div class="profile-section__head">
+							<div class="profile-section__title">Расскажите о своем опыте</div>
+						</div>
+						<div class="checkboxs-list">
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">БЭМ/OOCSS</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">Верстаю семантично</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">Webpack</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">Stylus/LESS/SASS</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">ES2015/ES2016</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">jQuery</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">Работаю с SVG</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">Gulp/GRUNT</span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">Ипользую Git</span>
+							</label>
+
+						</div>
+					</div>
+					<div class="profile-section" id="section3">
+						<div class="profile-section__icon">
+							<img src="img/icon3.svg" alt="">
+						</div>
+						<div class="profile-section__head">
+							<div class="profile-section__title">Уровень владения JavaScript</div>
+						</div>
+						<div class="range hidden-iphone">
+							<div class="range__row">
+								<div class="range__col">Не владею</div>
+								<div class="range__col">Использую готовые <br>решения</div>
+								<div class="range__col">Использую готовые решения и умею и переделывать</div>
+								<div class="range__col">Пишу сложный JS с нуля</div>
+							</div>
+							<div id="range" class="range-scroll"></div>
+						</div>
+						<div class="range-radio visible-iphone">
+							<label class="radio">
+								<input type="radio"  name="skill" checked="">
+								<span class="radio__figure"></span>
+								<span class="radio__text">Не владею</span>
+							</label>
+							<label class="radio">
+								<input type="radio" name="skill" >
+								<span class="radio__figure"></span>
+								<span class="radio__text">Использую готовые решения</span>
+							</label>
+							<label class="radio">
+								<input type="radio" name="skill" >
+								<span class="radio__figure"></span>
+								<span class="radio__text">Использую готовые решения и умею и переделывать</span>
+							</label>
+							<label class="radio">
+								<input type="radio" name="skill" >
+								<span class="radio__figure"></span>
+								<span class="radio__text">Пишу сложный JS с нуля</span>
+							</label>
+
+						</div>
+						
+					</div>
+					<div class="profile-section" id="section4">
+						<div class="profile-section__icon">
+							<img src="img/icon2.svg" alt="">
+						</div>
+						<div class="profile-section__head">
+							<div class="profile-section__title">Расскажите о себе</div>
+							<p class="profile-section__descr">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+						</div>
+						<div class="profile-form">
+							<div class="form-field form-textarea">
+								<span class="label">Понравилась тем, что...</span>
+								<textarea class="form-input"></textarea>
+							</div>
+
+							<div class="form-button">
+								<input type="submit" value="Готово" class="btn">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+	<!-- MAIN EOF   -->
+		
+	<!-- BEGIN FOOTER -->
+	<footer class="footer">
+		<div class="wrapper">
+	
+		</div>
+	</footer>
+	<!-- FOOTER EOF   -->
+
+	<!-- <a href="#callback" class="block__link popup-open">Попап</a>
+	
+	<div class="popup popup-callback ">
+		<div class="popup-container">
+			<div class="popup-content">
+				<div class="popup__close"></div>
+				<div class="popup__title"></div>
+				<div class="popup__text"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="popup popup-video">
+		<div class="popup-container">
+			<div class="popup-content">
+				<div class="popup__close"></div>
+				<div class="popup-video__value"></div>
+			</div>
+		</div>
+	</div> -->
+
+</div>
+<!-- BODY EOF   -->
+<div class="icon-load">
+	<div class="ball a"></div>
+	<div class="ball b"></div>
+	<div class="ball c"></div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/custom.js?ver1.0"></script>
+
+</body>
+</html>
