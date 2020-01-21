@@ -26,7 +26,7 @@ $(function(){
 
 	/* Forms  */
 	/* ---------------------------------------------- */
-	$('.form-input').focus(function(){
+	$('input.form-input').focus(function(){
 		var label = $(this).prev('.label');
 		var value = $(this).val();
 
@@ -60,7 +60,7 @@ $(function(){
 		range: 'max',
 		min: 1,
 		max: 65,
-		value: 0,
+		value: 33,
 		step: 1,
 		slide: function( event, ui ) {
            if( sliderValue.indexOf(ui.value)===-1 ) return false;
